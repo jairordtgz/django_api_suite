@@ -38,7 +38,7 @@ class DemoRestApi(APIView):
       return Response({'message': 'Dato guardado exitosamente.', 'data': data}, status=status.HTTP_201_CREATED)
 
 
-    class DemoRestApiItem(APIView):
+class DemoRestApiItem(APIView):
       """Vista para operar sobre un único elemento identificado por su `id`.
 
       Métodos soportados:
